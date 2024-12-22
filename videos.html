@@ -164,6 +164,73 @@
       });
   </script>
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Request Website Assessment</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container mt-5">
+            <form id="requestForm">
+              <!-- Name -->
+              <div class="mb-3">
+                <label for="name" class="form-label text-black">Name</label>
+                <input type="text" class="form-control bg-white" id="name" placeholder="Enter your name" required>
+              </div>
+  
+              <!-- Email ID -->
+              <div class="mb-3">
+                <label for="email" class="form-label text-black">Email ID</label>
+                <input type="email" class="form-control bg-white" id="email" placeholder="Enter your email" required>
+              </div>
+  
+              <!-- Mobile Number -->
+              <div class="mb-3">
+                <label for="mobile" class="form-label text-black">Mobile Number</label>
+                <input type="tel" class="form-control bg-white" id="mobile" placeholder="Enter your mobile number" required>
+              </div>
+  
+              <!-- Request For -->
+              <div class="mb-3">
+                <label for="request" class="form-label text-black">Request For</label>
+                <select class="form-select" id="request" required>
+                  <option value="">Select an option</option>
+                  <option value="website">Website</option>
+                  <option value="telegram_channel">Telegram Channel</option>
+                  <option value="whatsapp_group">WhatsApp Group</option>
+                  <option value="whatsapp_channel">WhatsApp Channel</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+  
+              <!-- Request Details (URL/Link) -->
+              <div class="mb-3">
+                <label for="request_url" class="form-label text-black">Request Path (URL / Link)</label>
+                <input type="text" class="form-control bg-white" id="request_url" placeholder="Enter your request link" required>
+              </div>
+  
+              <!-- Enter Message -->
+              <div class="mb-3">
+                <label for="message" class="form-label text-black">Enter Message</label>
+                <textarea class="form-control bg-white border-none" id="message" rows="4" placeholder="Enter your message here" required></textarea>
+              </div>
+  
+              <!-- Submit Button -->
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+  <script src="script.js"></script>
+
   <footer class="footer">
     <p>&copy; 2024 The Crime Monitor | All rights reserved</p>
   </footer>
