@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - The Crime Monitor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #f5f5f5;
+    }
+    
+    .contact-header {
+      background: url('https://www.shutterstock.com/image-vector/contact-us-customer-support-hotline-600nw-2407847227.jpg') no-repeat center center/cover;
+      color: #f5f5f5;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .contact-form {
+      background-color: #1e1e1e;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .form-control,
+    textarea {
+      background-color: #2b2b2b;
+      color: #f5f5f5;
+      border: 1px solid #444;
+    }
+    .form-control:focus,
+    textarea:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+    .footer {
+      background-color: #1e1e1e;
+      color: #f5f5f5;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    input::placeholder{
+        color: #fff;
+    }
+  </style>
+  
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-primary bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">The Crime Monitor</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="videos.html">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Request Assessment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Header Section -->
+  <section class="contact-header">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Contact Us</h1>
+      <p class="lead">Have questions or need support? We're here to help!</p>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="contact-form">
+            <h3 class="text-center mb-4">Get in Touch</h3>
+            <form>
+              <!-- Name -->
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+              </div>
+
+              <!-- Email -->
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+
+              <!-- Message -->
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Request Website Assessment</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container mt-5">
+            <form id="requestForm">
+              <!-- Name -->
+              <div class="mb-3">
+                <label for="name" class="form-label text-black">Name</label>
+                <input type="text" class="form-control bg-white" id="name" placeholder="Enter your name" required>
+              </div>
+  
+              <!-- Email ID -->
+              <div class="mb-3">
+                <label for="email" class="form-label text-black">Email ID</label>
+                <input type="email" class="form-control bg-white" id="email" placeholder="Enter your email" required>
+              </div>
+  
+              <!-- Mobile Number -->
+              <div class="mb-3">
+                <label for="mobile" class="form-label text-black">Mobile Number</label>
+                <input type="tel" class="form-control bg-white" id="mobile" placeholder="Enter your mobile number" required>
+              </div>
+  
+              <!-- Request For -->
+              <div class="mb-3">
+                <label for="request" class="form-label text-black">Request For</label>
+                <select class="form-select" id="request" required>
+                  <option value="">Select an option</option>
+                  <option value="website">Website</option>
+                  <option value="telegram_channel">Telegram Channel</option>
+                  <option value="whatsapp_group">WhatsApp Group</option>
+                  <option value="whatsapp_channel">WhatsApp Channel</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+  
+              <!-- Request Details (URL/Link) -->
+              <div class="mb-3">
+                <label for="request_url" class="form-label text-black">Request Path (URL / Link)</label>
+                <input type="text" class="form-control bg-white" id="request_url" placeholder="Enter your request link" required>
+              </div>
+  
+              <!-- Enter Message -->
+              <div class="mb-3">
+                <label for="message" class="form-label text-black">Enter Message</label>
+                <textarea class="form-control bg-white border-none" id="message" rows="4" placeholder="Enter your message here" required></textarea>
+              </div>
+  
+              <!-- Submit Button -->
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 The Crime Monitor. All rights reserved.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+
+  <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

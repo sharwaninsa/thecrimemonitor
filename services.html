@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - The Crime Monitor</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #f5f5f5;
+    }
+    .navbar {
+      background-color: #1e1e1e;
+    }
+    .navbar-brand,
+    .nav-link {
+      color: #f5f5f5;
+    }
+    .navbar-brand:hover,
+    .nav-link:hover {
+      color: #007bff;
+    }
+    .hero {
+      background: url('https://static.vecteezy.com/system/resources/previews/013/446/262/non_2x/digital-technology-circuits-blue-red-gradient-background-ai-big-data-iot-cyber-cloud-security-abstract-neon-wifi-tech-innovation-future-futuristic-internet-network-connection-illustration-vector.jpg') no-repeat center center/cover;
+      color: #f5f5f5;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .feature-icon {
+      font-size: 40px;
+      color: #007bff;
+    }
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+    .bg-light {
+      background-color: #1e1e1e !important;
+    }
+    .footer {
+      background-color: #1e1e1e;
+      color: #f5f5f5;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .service-icon {
+      font-size: 50px;
+      color: #007bff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-primary bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#">The Crime Monitor</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white active" aria-current="page" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="videos.html">Videos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Request Assessment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Our Services</h1>
+      <p class="lead">Protecting your online presence with the best cybersecurity assessments and solutions.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Our Core Services</h2>
+      <div class="row g-4">
+        
+        <!-- Website Assessment -->
+        <div class="col-md-6">
+          <div class="card bg-dark text-white">
+            <div class="card-body">
+              <h3 class="card-title"><i class="service-icon bi bi-globe"></i> Website Assessment</h3>
+              <p class="card-text">Our website assessment service ensures that your online presence is secure and optimized. We conduct thorough security checks for vulnerabilities, review your web infrastructure, and recommend enhancements to keep your site safe from cyber threats.</p>
+              <ul>
+                <li>Security vulnerability scanning</li>
+                <li>SEO and performance optimization</li>
+                <li>Compliance checks</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- App Assessment -->
+        <div class="col-md-6">
+          <div class="card bg-dark text-white">
+            <div class="card-body">
+              <h3 class="card-title"><i class="service-icon bi bi-phone"></i> App Assessment</h3>
+              <p class="card-text">Our app assessment service helps ensure that your mobile or web app is secure, user-friendly, and performs optimally. We test for vulnerabilities, analyze performance, and provide actionable feedback for improvements.</p>
+              <ul>
+                <li>Penetration testing</li>
+                <li>Performance benchmarking</li>
+                <li>UI/UX analysis</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Media Assessment -->
+        <div class="col-md-6">
+          <div class="card bg-dark text-white">
+            <div class="card-body">
+              <h3 class="card-title"><i class="service-icon bi bi-chat-square-dots"></i> Social Media Assessment</h3>
+              <p class="card-text">We analyze your social media platforms for security risks, privacy settings, and best practices. Our team helps secure your accounts and ensures your content reaches the right audience safely.</p>
+              <ul>
+                <li>Social media account security audit</li>
+                <li>Content privacy checks</li>
+                <li>Engagement and growth strategies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reviews -->
+        <div class="col-md-6">
+          <div class="card bg-dark text-white">
+            <div class="card-body">
+              <h3 class="card-title"><i class="service-icon bi bi-star"></i> Reviews</h3>
+              <p class="card-text">We provide comprehensive reviews of your digital assets—websites, apps, and social media accounts. Our reviews cover security, usability, performance, and compliance, helping you identify areas for improvement and boosting user confidence.</p>
+              <ul>
+                <li>Detailed website and app reviews</li>
+                <li>Security vulnerability reports</li>
+                <li>Performance and optimization suggestions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Request Website Assessment</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container mt-5">
+            <form id="requestForm">
+              <!-- Name -->
+              <div class="mb-3">
+                <label for="name" class="form-label text-black">Name</label>
+                <input type="text" class="form-control bg-white" id="name" placeholder="Enter your name" required>
+              </div>
+  
+              <!-- Email ID -->
+              <div class="mb-3">
+                <label for="email" class="form-label text-black">Email ID</label>
+                <input type="email" class="form-control bg-white" id="email" placeholder="Enter your email" required>
+              </div>
+  
+              <!-- Mobile Number -->
+              <div class="mb-3">
+                <label for="mobile" class="form-label text-black">Mobile Number</label>
+                <input type="tel" class="form-control bg-white" id="mobile" placeholder="Enter your mobile number" required>
+              </div>
+  
+              <!-- Request For -->
+              <div class="mb-3">
+                <label for="request" class="form-label text-black">Request For</label>
+                <select class="form-select" id="request" required>
+                  <option value="">Select an option</option>
+                  <option value="website">Website</option>
+                  <option value="telegram_channel">Telegram Channel</option>
+                  <option value="whatsapp_group">WhatsApp Group</option>
+                  <option value="whatsapp_channel">WhatsApp Channel</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+  
+              <!-- Request Details (URL/Link) -->
+              <div class="mb-3">
+                <label for="request_url" class="form-label text-black">Request Path (URL / Link)</label>
+                <input type="text" class="form-control bg-white" id="request_url" placeholder="Enter your request link" required>
+              </div>
+  
+              <!-- Enter Message -->
+              <div class="mb-3">
+                <label for="message" class="form-label text-black">Enter Message</label>
+                <textarea class="form-control bg-white border-none" id="message" rows="4" placeholder="Enter your message here" required></textarea>
+              </div>
+  
+              <!-- Submit Button -->
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 The Crime Monitor. All rights reserved.</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3.2.0/dist/email.min.js"></script>
+
+  <script src="script.js"></script>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
