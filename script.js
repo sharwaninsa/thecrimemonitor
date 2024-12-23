@@ -29,3 +29,95 @@ document.getElementById("requestForm").addEventListener("submit", function(event
     alert("There was an error sending your message, please try again later.");
   });
 });
+
+
+    document.getElementById('whoisForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const domain = document.getElementById('domain').value.trim();
+        const apiKey = '746e42068a804b1395491e90f7040c46';
+        const url = `https://api.whoisfreaks.com/v1.0/whois?apiKey=${apiKey}&whois=live&domainName=${domain}`;
+
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                const resultsDiv = document.getElementById('results');
+                const output = document.getElementById('whoisOutput');
+
+                if (data.error) {
+                    output.textContent = `Error: ${data.error}`;
+                } else {
+                    output.textContent = `Showing results for ${domain}`;
+                }
+
+                resultsDiv.classList.remove('d-none');
+
+                const domainCreateDate = new Date(data.create_date);
+                const currentDate = new Date();
+                const ageInMonths = (currentDate.getFullYear() - domainCreateDate.getFullYear()) * 12 + (currentDate.getMonth() - domainCreateDate.getMonth());
+
+                let risk;
+                let riskClass;
+
+                if (ageInMonths < 6) {
+                    risk = "75% (High Risk)";
+                    riskClass = "risk-high";
+                } else if (ageInMonths < 12) {
+                    risk = "50% (Medium Risk)";
+                    riskClass = "risk-medium";
+                } else if (ageInMonths < 24) {
+                    risk = "25% (Low Risk)";
+                    riskClass = "risk-low";
+                } else if (ageInMonths >= 60) {
+                    risk = "<10% (Minimal Risk)";
+                    riskClass = "risk-minimal";
+                } else {
+                    risk = "25% (Low Risk)";
+                    riskClass = "risk-low";
+                }
+
+                const outputDiv = document.getElementById("output");
+
+                // Create the table to display the data
+                outputDiv.innerHTML = `
+                    <table class="table table-striped table-primary">
+                        <thead>
+                            <tr>
+                                <th>Domain Information</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Domain Age</td>
+                                <td>${(ageInMonths / 12).toFixed(2)} years</td>
+                            </tr>
+                            <tr>
+                                <td>Risk Level</td>
+                                <td><span class="${riskClass}">${risk}</span></td>
+                            </tr>
+                            <tr>
+                                <td>Creation Date</td>
+                                <td>${domainCreateDate.toDateString()}</td>
+                            </tr>
+                            <tr>
+                                <td>Registrar</td>
+                                <td>${data.registrar || 'N/A'}</td>
+                            </tr>
+                            <tr>
+                                <td>Status</td>
+                                <td>${data.status || 'N/A'}</td>
+                            </tr>
+                            <tr>
+                                <td>Whois Server</td>
+                                <td>${data.whois_server || 'N/A'}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                `;
+            })
+            .catch(error => {
+                document.getElementById('whoisOutput').textContent = `Error fetching data: ${error.message}`;
+                document.getElementById('results').classList.remove('d-none');
+            });
+    });
