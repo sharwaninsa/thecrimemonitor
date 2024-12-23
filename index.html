@@ -62,6 +62,29 @@
       outline: none;
       box-shadow: none;
     }
+
+    .results {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 5px;
+  }
+        .risk-high {
+            color: red;
+            font-weight: bold;
+        }
+        .risk-medium {
+            color: yellow;
+            font-weight: bold;
+        }
+        .risk-low {
+            color: lightgreen;
+            font-weight: bold;
+        }
+        .risk-minimal {
+            color: darkgreen;
+            font-weight: bold;
+        }
   </style>
 <body>
   <nav class="navbar navbar-expand-lg navbar-primary bg-primary">
@@ -150,8 +173,27 @@
     </div>
   </section>
 
+  <div class="container">
+    <h1 class="text-center">Primary Scam Checker of a Domain</h1>
+    <p class="text-center">Enter a domain name to fetch its data.</p>
+
+    <form id="whoisForm">
+      <div class="mb-3">
+        <label for="domain" class="form-label">Domain Name</label>
+        <input type="text" class="form-control" id="domain" placeholder="example.com" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Fetch WHOIS Data</button>
+    </form>
+
+    <div id="results" class="results d-none">
+      <pre id="output"></pre>
+
+      <pre id="whoisOutput"></pre>
+    </div>
+  </div>
+
   <!-- Contact Section -->
-  <section id="contact" class="py-5">
+  <section id="contact" class="bg-light py-5">
     <div class="container">
       <h2 class="text-center mb-4">Contact Us</h2>
       <form>
