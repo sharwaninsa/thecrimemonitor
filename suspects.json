@@ -18,5 +18,285 @@
     "siteRunOn": "Telegram & Whatsapp",
     "score": "2.0",
     "trusted": false
-}]
+},
+{
+    "siteName": "Alpari",
+    "siteUrl": "https://alpari.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "Anyfx",
+    "siteUrl": "https://anyfx.in",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "Ava Trade",
+    "siteUrl": "https://www.avatrade.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "Binomo",
+    "siteUrl": "https://binomoidr.com/in",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "eToro",
+    "siteUrl": "https://www.etoro.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "Exness",
+    "siteUrl": "https://www.exness.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "Expert Option",
+    "siteUrl": "https://expertoption.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "FBS",
+    "siteUrl": "https://fbs.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "FinFxPro",
+    "siteUrl": "https://finfxpro.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "Forex.com",
+    "siteUrl": "https://www.forex.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "Forex4money",
+    "siteUrl": "https://www.forex4money.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "Foxorex",
+    "siteUrl": "https://foxorex.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "FTMO",
+    "siteUrl": "https://ftmo.com/en",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "FVP Trade",
+    "siteUrl": "https://fvpt-uk.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "FXPrimus",
+    "siteUrl": "https://fxprimus.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "FX Street",
+    "siteUrl": "https://www.fxstreet.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "FXCM",
+    "siteUrl": "https://www.fxcm.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "FxNice",
+    "siteUrl": "https://fx-nice.net",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "FXTM",
+    "siteUrl": "https://www.forextime.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "HotForex",
+    "siteUrl": "https://www.hotforex.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "ibell Markets",
+    "siteUrl": "https://ibellmarkets.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "IC Markets",
+    "siteUrl": "https://www.icmarkets.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "iFOREX",
+    "siteUrl": "https://www.iforex.in",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "IG Markets",
+    "siteUrl": "https://www.ig.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "IQ Option",
+    "siteUrl": "https://iq-option.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "NTS Forex Trading",
+    "siteUrl": "https://ntstradingrobot.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "OctaFX",
+    "siteUrl": "https://octaindia.net",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "Olymp Trade",
+    "siteUrl": "https://olymptrade.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "TD Ameritrade",
+    "siteUrl": "https://www.tdameritrade.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "TP Global FX",
+    "siteUrl": "https://www.tpglobalfx.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "Trade Sight FX",
+    "siteUrl": "https://tradesightfx.co.in",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "Urban Forex",
+    "siteUrl": "https://www.urbanforex.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "XM",
+    "siteUrl": "https://www.xm.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "XTB",
+    "siteUrl": "https://www.xtb.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "Quotex",
+    "siteUrl": "https://quotex.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "FX Western",
+    "siteUrl": "https://www.fxwestern.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "Pocket Option",
+    "siteUrl": "https://pocketoption.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "Tickmill",
+    "siteUrl": "https://www.tickmill.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "Cabana Capitals",
+    "siteUrl": "https://www.cabanacapitals.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  },
+  {
+    "siteName": "Vantage Markets",
+    "siteUrl": "https://www.vantagemarkets.com",
+    "siteRunOn": "Web",
+    "score": "6.0",
+    "trusted": false
+  }]
 }
